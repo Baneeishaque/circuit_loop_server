@@ -1,0 +1,5 @@
+POST {{host}}/{{httpApiFolder}}/insertRowMaterial.{{fileExtension}}
+Content-Type: application/x-www-form-urlencoded
+
+raw_material_name=name&raw_material_measurement_unit=raw_material_measurement_unit&raw_material_current_stock=0&raw_material_minimum_stock=0
+

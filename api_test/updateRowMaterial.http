@@ -1,0 +1,5 @@
+POST {{host}}/{{httpApiFolder}}/updateRowMaterial.{{fileExtension}}
+Content-Type: application/x-www-form-urlencoded
+
+raw_material_id=21&raw_material_name=rw21&raw_material_measurement_unit=Nos&raw_material_current_stock=126&raw_material_minimum_stock=100
+

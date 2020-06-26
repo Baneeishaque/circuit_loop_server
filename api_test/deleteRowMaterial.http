@@ -1,0 +1,5 @@
+POST {{host}}/{{httpApiFolder}}/deleteRowMaterial.{{fileExtension}}
+Content-Type: application/x-www-form-urlencoded
+
+raw_material_id=11
+

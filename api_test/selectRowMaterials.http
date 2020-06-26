@@ -1,0 +1,3 @@
+GET {{host}}/{{httpApiFolder}}/selectRowMaterials.{{fileExtension}}
+Accept: application/json
+
