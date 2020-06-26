@@ -1,0 +1,20 @@
+{
+  "name": "baneeishaque/circuit_loop_server",
+  "description": "Circuit Loop Armatures Server",
+  "type": "project",
+  "require": {
+    "ext-mysqli": "^7.3",
+    "ext-gettext": "^7.3"
+  },
+  "require-dev": {
+    "heroku/heroku-buildpack-php": "^177.0"
+  },
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Banee Ishaque k",
+      "email": "baneeishaque@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable"
+}
