@@ -7,7 +7,7 @@ $raw_material_measurement_unit = filter_input(INPUT_POST, 'raw_material_measurem
 $raw_material_current_stock = filter_input(INPUT_POST, 'raw_material_current_stock');
 $raw_material_minimum_stock = filter_input(INPUT_POST, 'raw_material_minimum_stock');
 
-$insertionSql = "UPDATE
+$updationSql = "UPDATE
   `raw_materials`
 SET
   `name` = '$raw_material_name',
@@ -17,7 +17,7 @@ SET
 WHERE `id` = '$raw_material_id';
 ";
 
-if (!$con->query($insertionSql)) {
+if (!$con->query($updationSql)) {
 
     $arr = array('status' => "1", 'error' => $con->error);
 
