@@ -1,3 +1,41 @@
+GET https://circuit-loop-armatures.herokuapp.com/http_Api/selectRawMaterials.php
+Accept: application/json
+
+<> 2020-07-07T093502.200.html
+
+###
+
+GET https://circuit-loop-armatures.herokuapp.com/http_Api/selectRawMaterials.{fileExtension}}
+Accept: application/json
+
+###
+
+GET https://circuit-loop-armatures.herokuapp.com/http_Api/selectRawMaterials.{fileExtension}}
+Accept: application/json
+
+###
+
+GET https://circuit-loop-armatures.herokuapp.com/http_Api/selectRowMaterials.php
+Accept: application/json
+
+<> 2020-07-07T092853.404.html
+
+###
+
+GET https://circuit-loop-armatures.herokuapp.com/http_Api/selectRowMaterials.php
+Accept: application/json
+
+<> 2020-07-07T092718.404.html
+
+###
+
+GET https://circuit-loop-armatures.herokuapp.com/http_Api/selectRowMaterials.php
+Accept: application/json
+
+<> 2020-07-07T092708.404.html
+
+###
+
 GET https://circuit-loop-armatures.herokuapp.com/http_Api/selectRowMaterials.php
 Accept: application/json
 
