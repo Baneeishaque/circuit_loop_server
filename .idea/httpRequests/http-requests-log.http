@@ -1,3 +1,44 @@
+POST https://circuit-loop-armatures.herokuapp.com/http_Api/insertRawMaterial.php
+Content-Type: application/x-www-form-urlencoded
+
+raw_material_name=name&raw_material_measurement_unit=raw_material_measurement_unit&raw_material_current_stock=0&raw_material_minimum_stock=0
+
+<> 2020-07-09T080051.200.html
+
+###
+
+GET https://circuit-loop-armatures.herokuapp.com/http_Api/selectRawMaterials.php
+Accept: application/json
+
+<> 2020-07-09T080038.200.html
+
+###
+
+POST https://circuit-loop-armatures.herokuapp.com/http_Api/insertRawMaterial.php
+Content-Type: application/x-www-form-urlencoded
+
+raw_material_name=name&raw_material_measurement_unit=raw_material_measurement_unit&raw_material_current_stock=0&raw_material_minimum_stock=0
+
+<> 2020-07-09T080031.200.html
+
+###
+
+POST https://circuit-loop-armatures.herokuapp.com/http_Api/insertRowMaterial.php
+Content-Type: application/x-www-form-urlencoded
+
+raw_material_name=name&raw_material_measurement_unit=raw_material_measurement_unit&raw_material_current_stock=0&raw_material_minimum_stock=0
+
+<> 2020-07-09T080008.404.html
+
+###
+
+GET https://circuit-loop-armatures.herokuapp.com/http_Api/selectRawMaterials.php
+Accept: application/json
+
+<> 2020-07-09T080000.200.html
+
+###
+
 GET https://circuit-loop-armatures.herokuapp.com/http_Api/selectRawMaterials.php
 Accept: application/json
 
