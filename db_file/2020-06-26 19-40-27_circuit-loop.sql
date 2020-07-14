@@ -41,48 +41,6 @@ CREATE TABLE `admin`
 
 /*Data for the table `admin` */
 
-/*Table structure for table `order_items` */
-
-DROP TABLE IF EXISTS `order_items`;
-
-CREATE TABLE `order_items`
-(
-    `id`         int(10) unsigned NOT NULL AUTO_INCREMENT,
-    `order_id`   int(10) unsigned NOT NULL,
-    `item_id`    int(10) unsigned NOT NULL,
-    `qty`        double unsigned  NOT NULL,
-    `piece_rate` double unsigned  NOT NULL,
-    PRIMARY KEY (`id`),
-    KEY `ORDER_ID` (`order_id`),
-    KEY `ITEM_ID` (`item_id`),
-    CONSTRAINT `ORDER_ID` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`) ON UPDATE CASCADE,
-    CONSTRAINT `ITEM_ID` FOREIGN KEY (`item_id`) REFERENCES `raw_materials` (`id`) ON UPDATE CASCADE
-) ENGINE = InnoDB
-  DEFAULT CHARSET = utf8;
-
-/*Data for the table `order_items` */
-
-/*Table structure for table `orders` */
-
-DROP TABLE IF EXISTS `orders`;
-
-CREATE TABLE `orders`
-(
-    `id`             int(10) unsigned NOT NULL AUTO_INCREMENT,
-    `price`          double           NOT NULL,
-    `status`         varchar(15)      NOT NULL,
-    `supplier_id`    int(11)          NOT NULL,
-    `transaction_id` int(11)          NOT NULL,
-    PRIMARY KEY (`id`),
-    KEY `STATUS` (`status`),
-    KEY `SUPPLIER_ID` (`supplier_id`),
-    KEY `TRANSACTION_ID` (`transaction_id`),
-    CONSTRAINT `SUPPLIER_ID` FOREIGN KEY (`supplier_id`) REFERENCES `suppliers` (`id`) ON UPDATE CASCADE,
-    CONSTRAINT `TRANSACTION_ID` FOREIGN KEY (`transaction_id`) REFERENCES `transactions` (`id`) ON UPDATE CASCADE
-) ENGINE = InnoDB
-  DEFAULT CHARSET = utf8;
-
-/*Data for the table `orders` */
 
 /*Table structure for table `products` */
 
@@ -195,6 +153,49 @@ CREATE TABLE `transactions`
   DEFAULT CHARSET = utf8;
 
 /*Data for the table `transactions` */
+
+/*Table structure for table `orders` */
+
+DROP TABLE IF EXISTS `orders`;
+
+CREATE TABLE `orders`
+(
+    `id`             int(10) unsigned NOT NULL AUTO_INCREMENT,
+    `price`          double           NOT NULL,
+    `status`         varchar(15)      NOT NULL,
+    `supplier_id`    int(11)          NOT NULL,
+    `transaction_id` int(11)          NOT NULL,
+    PRIMARY KEY (`id`),
+    KEY `STATUS` (`status`),
+    KEY `SUPPLIER_ID` (`supplier_id`),
+    KEY `TRANSACTION_ID` (`transaction_id`),
+    CONSTRAINT `SUPPLIER_ID` FOREIGN KEY (`supplier_id`) REFERENCES `suppliers` (`id`) ON UPDATE CASCADE,
+    CONSTRAINT `TRANSACTION_ID` FOREIGN KEY (`transaction_id`) REFERENCES `transactions` (`id`) ON UPDATE CASCADE
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8;
+
+/*Data for the table `orders` */
+
+/*Table structure for table `order_items` */
+
+DROP TABLE IF EXISTS `order_items`;
+
+CREATE TABLE `order_items`
+(
+    `id`         int(10) unsigned NOT NULL AUTO_INCREMENT,
+    `order_id`   int(10) unsigned NOT NULL,
+    `item_id`    int(10) unsigned NOT NULL,
+    `qty`        double unsigned  NOT NULL,
+    `piece_rate` double unsigned  NOT NULL,
+    PRIMARY KEY (`id`),
+    KEY `ORDER_ID` (`order_id`),
+    KEY `ITEM_ID` (`item_id`),
+    CONSTRAINT `ORDER_ID` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`) ON UPDATE CASCADE,
+    CONSTRAINT `ITEM_ID` FOREIGN KEY (`item_id`) REFERENCES `raw_materials` (`id`) ON UPDATE CASCADE
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8;
+
+/*Data for the table `order_items` */
 
 /*!40101 SET SQL_MODE = @OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS = @OLD_FOREIGN_KEY_CHECKS */;
