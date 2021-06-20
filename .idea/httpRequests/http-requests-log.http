@@ -1,3 +1,10 @@
+GET https://circuit-loop-armatures.herokuapp.com/http_Api/selectRawMaterials.php
+Accept: application/json
+
+<> 2021-06-20T120406.200.html
+
+###
+
 POST https://circuit-loop-armatures.herokuapp.com/http_Api/insertRawMaterial.php
 Content-Type: application/x-www-form-urlencoded
 

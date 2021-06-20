@@ -1,66 +1,67 @@
 {
-  "_readme": [
-    "This file locks the dependencies of your project to a known state",
-    "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
-    "This file is @generated automatically"
-  ],
-  "content-hash": "ff6b39cb887e6cd4fa93cddcf10c6688",
-  "packages": [],
-  "packages-dev": [
-    {
-      "name": "heroku/heroku-buildpack-php",
-      "version": "v177",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/heroku/heroku-buildpack-php.git",
-        "reference": "fe7640eb4f46bfe00e31b77b3b6b809ab74ab5c7"
-      },
-      "dist": {
-        "type": "zip",
-        "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/fe7640eb4f46bfe00e31b77b3b6b809ab74ab5c7",
-        "reference": "fe7640eb4f46bfe00e31b77b3b6b809ab74ab5c7",
-        "shasum": ""
-      },
-      "bin": [
-        "bin/heroku-hhvm-apache2",
-        "bin/heroku-hhvm-nginx",
-        "bin/heroku-php-apache2",
-        "bin/heroku-php-nginx"
-      ],
-      "type": "library",
-      "notification-url": "https://packagist.org/downloads/",
-      "license": [
-        "MIT"
-      ],
-      "authors": [
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "6d9bd8a77e26ec5a2e7715873c30cb54",
+    "packages": [],
+    "packages-dev": [
         {
-          "name": "David Zuelke",
-          "email": "dz@heroku.com"
+            "name": "heroku/heroku-buildpack-php",
+            "version": "v193",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/heroku/heroku-buildpack-php.git",
+                "reference": "3ed73cef52173add127fdce06ec7dd936dcb9b23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/3ed73cef52173add127fdce06ec7dd936dcb9b23",
+                "reference": "3ed73cef52173add127fdce06ec7dd936dcb9b23",
+                "shasum": ""
+            },
+            "bin": [
+                "bin/heroku-php-apache2",
+                "bin/heroku-php-nginx"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Zuelke",
+                    "email": "dz@heroku.com"
+                }
+            ],
+            "description": "Toolkit for starting a PHP application locally, with or without foreman, using the same config for PHP and Apache2/Nginx as on Heroku",
+            "homepage": "https://github.com/heroku/heroku-buildpack-php",
+            "keywords": [
+                "apache",
+                "apache2",
+                "foreman",
+                "heroku",
+                "nginx",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/heroku/heroku-buildpack-php/issues",
+                "source": "https://github.com/heroku/heroku-buildpack-php/tree/v193"
+            },
+            "time": "2021-06-07T20:53:28+00:00"
         }
-      ],
-      "description": "Toolkit for starting a PHP application locally, with or without foreman, using the same config for PHP/HHVM and Apache2/Nginx as on Heroku",
-      "homepage": "https://github.com/heroku/heroku-buildpack-php",
-      "keywords": [
-        "apache",
-        "apache2",
-        "foreman",
-        "heroku",
-        "hhvm",
-        "nginx",
-        "php"
-      ],
-      "time": "2020-06-18T17:40:54+00:00"
-    }
-  ],
-  "aliases": [],
-  "minimum-stability": "stable",
-  "stability-flags": [],
-  "prefer-stable": false,
-  "prefer-lowest": false,
-  "platform": {
-    "ext-mysqli": "^7.3",
-    "ext-gettext": "^7.3"
-  },
-  "platform-dev": [],
-  "plugin-api-version": "1.1.0"
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "ext-mysqli": "*",
+        "ext-gettext": "*"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
 }
